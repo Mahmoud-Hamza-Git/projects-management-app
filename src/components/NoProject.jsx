@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   user-select: none;
+  text-align: center;
 
   img {
     margin-top: -150px;

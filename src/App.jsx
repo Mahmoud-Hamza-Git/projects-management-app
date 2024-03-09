@@ -5,16 +5,6 @@ import CreateProject from "./components/CreateProject";
 import NoProject from "./components/NoProject";
 import Project from "./components/Project";
 
-// const project = {
-//   id: "1",
-//   title: "Project 1",
-//   dueDate: "2021-12-31",
-//   description: "This is a project description",
-//   tasks: [
-//     { id: "1", name: "Task 1", isDone: false },
-//     { id: "2", name: "Task 2", isDone: true },
-//   ],
-// };
 function App() {
   const [projects, setProjects] = useState([]);
   const [selectedProjectId, setSelectedProjectId] = useState(null);
@@ -74,3 +64,14 @@ export default App;
 // 18. Add a feature to add a subtask to the tasks
 // 20. Add a feature to add a file to the tasks
 // 21. Add a feature to add a link to the tasks
+
+// const project = {
+//   id: "1",
+//   title: "Project 1",
+//   dueDate: "2021-12-31",
+//   description: "This is a project description",
+//   tasks: [
+//     { id: "1", name: "Task 1", isDone: false },
+//     { id: "2", name: "Task 2", isDone: true },
+//   ],
+// };

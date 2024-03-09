@@ -8,12 +8,12 @@ export const Wrapper = styled.div`
 `;
 
 export const CreateForm = styled.form`
-  width: 80%;
+  width: 100%;
   max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   border-radius: 10px;
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
 `;
@@ -64,6 +64,7 @@ export const Row = styled.div`
     user-select: none;
   }
   .input {
+    width: 100%; // take the full width
     padding: 8px 10px;
     border-radius: 5px;
     border-bottom: 2px solid transparent;

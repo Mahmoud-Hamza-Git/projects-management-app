@@ -4,8 +4,6 @@ import styled from "styled-components";
 const togglerDelay = "500ms";
 
 const PageWrapper = styled.div`
-  max-width: 1600px;
-  margin: 0 auto;
   min-height: 100vh;
   display: flex;
 
@@ -48,6 +46,7 @@ const PageWrapper = styled.div`
     margin-left: ${({ open }) => (open ? "340px" : "40px")};
     transition: margin-left ${togglerDelay};
     flex: 1;
+    padding: 0 20px;
     @media (max-width: 850px) {
       margin-left: 40px;
     }
