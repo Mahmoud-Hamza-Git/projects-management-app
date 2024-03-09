@@ -53,8 +53,7 @@ const PageWrapper = styled.div`
   }
 `;
 
-function PageContainer({ sidebar, children }) {
-  const [sideOpen, setSideOpen] = useState(true);
+function PageContainer({ sidebar, children, sideOpen, setSideOpen }) {
   return (
     <PageWrapper open={sideOpen}>
       <aside className="sidebar">

@@ -9,6 +9,7 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [selectedProjectId, setSelectedProjectId] = useState(null);
   const [isCreating, setIsCreating] = useState(false);
+  const [sideOpen, setSideOpen] = useState(false);
 
   let selectedProject = null;
   if (selectedProjectId) {
@@ -31,12 +32,14 @@ function App() {
 
   return (
     <Page
+      sideOpen={sideOpen}
+      setSideOpen={setSideOpen}
       sidebar={
         <SideBar
           projects={projects}
           showCreate={setIsCreating}
           onSelectProject={setSelectedProjectId}
-          onStopCreating={setIsCreating}
+          setSideOpen={setSideOpen}
         />
       }>
       {content}
